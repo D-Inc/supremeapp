@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.tytech.ninjawarrior1337"
+        minSdkVersion 22
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    publishNonDefault true
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.support:wearable:2.0.2'
+    compile 'com.google.android.gms:play-services-wearable:10.2.6'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    provided 'com.google.android.wearable:wearable:2.0.2'
+}

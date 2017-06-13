@@ -5,4 +5,7 @@
     <color name="colorAccent">#3399ff</color>
     <color name="FavoriteColor">#3399ff</color>
     <color name="windowBackground">#202528</color>
+    <color name="switchTextAppearance">#fff</color>
+    <color name="defaultTPortal">#17C0E9</color>
+    <color name="defaultBPortal">#ff9a00</color>
 </resources>

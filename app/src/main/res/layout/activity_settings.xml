@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BottomPortalCS"
+            android:layout_width="605dp"
+            android:layout_height="63dp"
+            android:background="#3399ff"
+            android:text="Bottom Portal Color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TopPortalCS"
+            />
+
+        <Button
+            android:id="@+id/TopPortalCS"
+            android:layout_width="600dp"
+            android:layout_height="63dp"
+            android:background="#3399ff"
+            android:text="Top Portal Color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-1dp"
+            app:layout_constraintHorizontal_bias="0.666"/>
+
+        <Button
+            android:id="@+id/PortalReset"
+            android:layout_width="600dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:text="Reset Portal Colors"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TopPortalCS"
+            app:layout_constraintVertical_bias="0.155"/>
+
+    </android.support.constraint.ConstraintLayout>
 </LinearLayout>
